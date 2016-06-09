@@ -1,7 +1,7 @@
 <?php
-$PluginInfo['categoryButtons'] = [
-    'Name' => 'Category Buttons',
-    'Description' => 'Turns the category dropdown new discussions to buttons.',
+$PluginInfo['categorySelector'] = [
+    'Name' => 'Category Selector',
+    'Description' => 'Turns the category dropdown in new discussions into buttons.',
     'Version' => '0.1',
     'RequiredApplications' => ['Vanilla' => '>= 2.2'],
     'MobileFriendly' => true,
@@ -11,9 +11,9 @@ $PluginInfo['categoryButtons'] = [
     'License' => 'MIT'
 ];
 
-class CategoryButtonsPlugin extends Gdn_Plugin {
+class CategorySelectorPlugin extends Gdn_Plugin {
     public function postController_render_before($sender) {
-        $sender->addCssFile('categorybuttons.css', 'plugins/categoryButtons');
+        $sender->addCssFile('categorybuttons.css', 'plugins/categorySelector');
     }
 
     public function postController_beforeFormInputs_handler($sender, $args) {
@@ -50,7 +50,3 @@ class CategoryButtonsPlugin extends Gdn_Plugin {
     }
 
 }
-// Add credits:
-// https://vanillaforums.org/addon/737/category-buttons
-// https://vanillaforums.org/discussion/comment/241094/#Comment_241094
-// http://viralpatel.net/blogs/css-radio-button-checkbox-background/
