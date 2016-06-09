@@ -1,0 +1,46 @@
+div.Category > label.CategoryButton {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: bold;
+    padding: 4px 6px;
+    background: #f8f8f8;
+    border: 1px solid #999;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    white-space: nowrap;
+    background-image: linear-gradient(bottom, #CCCCCC 0%, #FAFAFA 100%);
+    background-image: -o-linear-gradient(bottom, #CCCCCC 0%, #FAFAFA 100%);
+    background-image: -moz-linear-gradient(bottom, #CCCCCC 0%, #FAFAFA 100%);
+    background-image: -webkit-linear-gradient(bottom, #CCCCCC 0%, #FAFAFA 100%);
+    background-image: -ms-linear-gradient(bottom, #CCCCCC 0%, #FAFAFA 100%);
+    background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, #CCCCCC),
+            color-stop(1, #FAFAFA)
+    );
+    text-shadow: 0 1px 0 #fff;
+    box-shadow: inset 0 1px 0 #fff, inset 0 -1px 2px #bbb;
+    -moz-box-shadow: inset 0 1px 0 #fff, inset 0 -1px 2px #bbb;
+    -webkit-box-shadow: inset 0 1px 0 #fff, inset 0 -1px 2px #bbb;
+    border-color: #999;
+    color: #333;
+}
+
+div.Category > label.CategoryButton:hover {
+    color: #111;
+    border-color: #666;
+}
+
+div.Category > input[type=radio]:checked + label {
+    border-color: #aaa;
+    background: #f7f7f7;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
